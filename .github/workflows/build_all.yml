@@ -528,7 +528,7 @@ jobs:
     #           name: sdrpp_ubuntu_noble_aarch64
     #           path: ${{runner.workspace}}/sdrpp_debian_amd64.deb
 
-    build_android:
+    #build_android:
         runs-on: ubuntu-latest
 
         steps:
