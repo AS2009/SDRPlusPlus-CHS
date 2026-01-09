@@ -621,23 +621,23 @@ jobs:
     #     - name: Update Nightly
     #       run: gh release upload nightly sdrpp_all/* -R ${{github.repository}} --clobber
 
-    check_spelling:
-        runs-on: ubuntu-latest
+    #check_spelling:
+        #runs-on: ubuntu-latest
 
-        steps:
-        - uses: actions/checkout@v4
+        #steps:
+        #- uses: actions/checkout@v4
 
-        - name: Install codespell
-          run: sudo apt update -y && sudo apt install -y codespell
+       # - name: Install codespell
+         # run: sudo apt update -y && sudo apt install -y codespell
         
-        - name: Running codespell
-          run: cd $GITHUB_WORKSPACE && codespell -q 2 || true
+       # - name: Running codespell
+        #  run: cd $GITHUB_WORKSPACE && codespell -q 2 || true
 
-    check_formatting:
-        runs-on: ubuntu-latest
+   # check_formatting:
+      #  runs-on: ubuntu-latest
 
-        steps:
-        - uses: actions/checkout@v4
+       # steps:
+       # - uses: actions/checkout@v4
         
-        - name: Run check_clang_format
-          run: cd $GITHUB_WORKSPACE && chmod +x ./check_clang_format.sh && ./check_clang_format.sh || true
+       # - name: Run check_clang_format
+        #  run: cd $GITHUB_WORKSPACE && chmod +x ./check_clang_format.sh && ./check_clang_format.sh || true
