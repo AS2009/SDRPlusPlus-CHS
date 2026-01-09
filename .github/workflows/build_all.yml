@@ -14,7 +14,6 @@ env:
     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-  foo:
     #build_windows:
         #runs-on: windows-latest
 
